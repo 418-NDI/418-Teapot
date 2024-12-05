@@ -1,11 +1,11 @@
 from app import app
-from flask import render_template, abort
+from flask import render_template
 import json
 
 def get_data():
     with open('app/corps.json') as file:
         data = json.load(file)
-    return {d['title'] : d['content'] for d in data}
+    return {d['title'] : [d['content'], d['info']] for d in data}
 
 @app.route('/')
 @app.route('/index.html')
@@ -22,4 +22,5 @@ def about():
 
 @app.route('/<partie>.html')
 def corps(partie):
-    return render_template("corps.html", element=partie, desc = get_data()[partie], collection=get_data().keys())
+    d = get_data()[partie]
+    return render_template("corps.html", element=partie, desc = d[0], info = d[1], collection=get_data().keys())

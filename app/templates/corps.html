@@ -6,5 +6,9 @@
 
 {% block body %}
 <h1>{{element}}</h1>
-<p>{{desc}}</p>
+{% autoescape false %}
+<p>{{"<br />".join(desc.split("\n"))}}</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>{{"<br />".join(info.split("\n"))}}</p>
+{% endautoescape %}
 {% endblock %}
