@@ -1,2 +1,7 @@
 Titre : Cœur
-Texte : Vous êtes dans le cœur, c'est comme les océans car ... infos
+Texte : Vous êtes dans le cœur.
+    Le cœur humain est une pompe essentielle : il fait circuler le sang et transporte l'oxygène et les nutriments dans tout le corps.
+    Comme le cœur, les courants marins sont les pompes des océans. Ils transportent la chaleur, les nutriments et les gaz dissous à travers la planète, régulant le climat et alimentant les écosystèmes marins.
+
+Info : Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis.
+

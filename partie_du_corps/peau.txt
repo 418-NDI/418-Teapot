@@ -1,0 +1,6 @@
+Titre : Peau
+Texte : Vous êtes sur la peau.
+    La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation.
+    De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux.
+
+Info : Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique.
