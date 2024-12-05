@@ -1,20 +1,20 @@
-html, body {
+.main {
   font-family: Arial, sans-serif;
   height: 100%;
 }
 
-header {
+.entete {
   background-color: #6699ff;
   margin: 20px;
 }
 
-nav {
+.barrenav {
   display: flex;
   justify-content: space-between;
   color: white;
 }
 
-nav a {
+.nav-link {
   flex-grow: 1;
   text-decoration: none;
   text-align: center;
@@ -22,15 +22,15 @@ nav a {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-nav a:link{
+.nav-link:link{
   color: white;
 }
 
-nav a:visited{
+.nav-link:visited{
   color: white;
 }
 
-nav a:hover {
+.nav-link:hover {
   background-color: #6666ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
