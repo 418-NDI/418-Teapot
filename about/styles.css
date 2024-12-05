@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #d0ffaa;
+  
+}
+
+nav p a {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #161725;
+  background-color: #a6f0fd;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav p a:hover {
+  background-color: #6666ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  color: #690069;
+}
+
+.wallpaper {
+  background-image: url("img/Background_.png");
+  background-size: cover; /* Pour que l'image couvre toute la taille de l'élément */
+  background-position: center; /* Pour centrer l'image dans l'élément */
+  background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
+  width: 100vw;
+  height: 100vh;
+}
+
+
+.animated-item {
+  position: absolute;
+  user-select: none; /* Désactive la sélection de texte */
+  pointer-events: none; /* Ignore les événements de la souris */
+}
+
+/* Spécialement pour les images */
+.animated-item img {
+  max-width: 200px; /* L'image ne dépasse pas 100% de la largeur du conteneur */
+}
+
+/* Spécialement pour les emojis */
+.animated-item span {
+  font-size: 10vh; /* Taille de l'emoji */
+  width: 10vh; /* Largeur égale à la hauteur pour obtenir un cercle parfait */
+  height: 10vh; /* Hauteur égale à la largeur pour obtenir un cercle parfait */
+  background-color: #ffffff6e; /* Fond pour voir le halo */
+  border-radius: 50%; /* Rendre l'élément circulaire */
+  display: inline-flex; /* Utiliser inline-flex pour permettre le centrage de l'emoji */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  box-shadow: 0 0 15px rgba(146, 242, 255, 0.466); /* Halo bleu autour de l'emoji */
+  line-height: 15; /* Ajuster la hauteur de ligne pour que l'emoji reste centré */
+}
+
+}
