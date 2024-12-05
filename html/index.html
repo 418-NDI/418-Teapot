@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>corps</title>
-    <link rel="shortcut icon" href="../star.png" type="image/x-icon" />
-    <link rel="stylesheet" href="../styles.css" />
-
-</head>
-<body>
-    <nav>
-        <p>
-            <a href="index.html" class="current">Corps entier</a> 
-
-            <label for="body_select">Naviguer :</label>
-            <select name="partie_corps" id="body_select" onchange="navigateToPage()">
-                <option value="">-- Sélectionnez une partie --</option>
-                <option value="index.html">Corps</option>
-                <option value="poumons.html">Poumons</option>
-                <option value="cœur.html">Cœur</option>
-            </select>
-
-            <a href="podcast.html">Podcast</a>
-            <a href="about.html">About us</a>
-        </p>
-    </nav>
-
-    <script>
-        function navigateToPage() {
-            const select = document.getElementById("body_select");
-            const selectedValue = select.value;
-            if (selectedValue) {
-                window.location.href = selectedValue; // Redirige vers la page choisie
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>corps</title>
+        <link rel="shortcut icon" href="../logo.png" type="image/x-icon" />
+        <link rel="stylesheet" href="../styles.css" />
+    
+    </head>
+    <body>
+        <nav>
+            <p>
+                <a href="index.html" class="current">Corps entier</a> 
+    
+                <label for="body_select">Naviguer :</label>
+                <select name="partie_corps" id="body_select" onchange="navigateToPage()">
+                    <option value="">Parties du corps</option>
+                    <option value="index.html">Corps</option>
+                    <option value="poumons.html">Poumons</option>
+                    <option value="cœur.html">Cœur</option>
+                </select>
+                <a href="recherche.html">Recherche</a>
+                <a href="podcast.html">Podcast</a>
+                <a href="about.html">About us</a>
+            </p>
+        </nav>
+        <script>
+            function navigateToPage() {
+                const select = document.getElementById("body_select");
+                const selectedValue = select.value;
+                if (selectedValue) {
+                    window.location.href = selectedValue; // Redirige vers la page choisie
+                }
             }
-        }
-    </script>
+        </script>
+    
 
 
     <main>
