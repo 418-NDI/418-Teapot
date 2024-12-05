@@ -1,0 +1,23 @@
+<header>
+  <nav>
+    <a href="/">Corps entier</a> 
+    <!-- <label for="body_select">Naviguer :</label>
+    <select name="partie_corps" id="body_select" onchange="navigateToPage()">
+      <option value="">-- Sélectionnez une partie --</option>
+      <option value="/">Corps</option>
+      <option value="/poumons.html">Poumons</option>
+      <option value="/cœur.html">Cœur</option>
+    </select> -->
+    <a href="podcast">Podcast</a>
+    <a href="about">About us</a>
+  </nav>
+</header>
+<script>
+  function navigateToPage() {
+    const select = document.getElementById("body_select");
+    const selectedValue = select.value;
+    if (selectedValue) {
+      window.location.href = selectedValue; // Redirige vers la page choisie
+    }
+  }
+</script>
