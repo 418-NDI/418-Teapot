@@ -12,13 +12,13 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  color: white;
 }
 
 .nav-link {
   font-family: 'Verdana', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   background-color: #6699ff;
+  color: white;
   flex-grow: 1;
   text-decoration: none;
   text-align: center;
