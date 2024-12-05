@@ -3,7 +3,7 @@ body {
   padding: 20px;
 }
 
-.highlightable {
+nav p a {
   margin: 10px 0;
   padding: 15px;
   border: 1px solid #ccc;
@@ -11,9 +11,13 @@ body {
   transition: background-color 0.3s, box-shadow 0.3s;
 }
 
-.highlightable:hover {
+nav p a:hover {
   background-color: #6666ff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+h1 {
+  
 }
 
