@@ -1,7 +1,39 @@
-/* styles.css */
-body {
+html, body {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  height: 100%;
+}
+
+header {
+  background-color: #6699ff;
+  margin: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+nav a {
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
+  padding: 15px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav a:link{
+  color: white;
+}
+
+nav a:visited{
+  color: white;
+}
+
+nav a:hover {
+  background-color: #6666ff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
 
 .highlightable {
