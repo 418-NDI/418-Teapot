@@ -1,14 +1,36 @@
-body {
+html, body {
   font-family: Arial, sans-serif;
-  padding: 20px;
+  height: 100%;
+}
+
+nav {
+  background-color: #6699ff;
+  margin: 20px;
+}
+
+nav p {
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  margin: 10px 0;
+  padding: 15px;
+  color: white;
 }
 
 nav p a {
-  margin: 10px 0;
+  flex-grow: 1;
+  text-decoration: none;
+  text-align: center;
   padding: 15px;
-  border: 1px solid #ccc;
-  background-color: #0000cc;
   transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav p a:link{
+  color: white;
+}
+
+nav p a:visited{
+  color: white;
 }
 
 nav p a:hover {
