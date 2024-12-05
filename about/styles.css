@@ -1,57 +1,52 @@
 body {
-  font-family: Arial, sans-serif;
-  background-color: #d0ffaa;
-  
+  background-image: url("img/Background_.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  margin: 0; /* Enlever les marges par défaut */
+  padding: 0; /* Enlever les paddings par défaut */
+  overflow: hidden; /* Empêche le débordement */
 }
-
-nav p a {
-  margin: 10px 0;
-  padding: 15px;
-  border: 1px solid #161725;
-  background-color: #a6f0fd;
-  transition: background-color 0.3s, box-shadow 0.3s;
-}
-
-nav p a:hover {
-  background-color: #6666ff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  color: #690069;
-}
-
-.wallpaper {
-  background-image: url("img/Background_.png");
-  background-size: cover; /* Pour que l'image couvre toute la taille de l'élément */
-  background-position: center; /* Pour centrer l'image dans l'élément */
-  background-repeat: no-repeat; /* Pour empêcher la répétition de l'image */
-  width: 100vw;
-  height: 100vh;
-}
-
 
 .animated-item {
   position: absolute;
   user-select: none; /* Désactive la sélection de texte */
-  pointer-events: none; /* Ignore les événements de la souris */
+
 }
 
 /* Spécialement pour les images */
 .animated-item img {
-  max-width: 200px; /* L'image ne dépasse pas 100% de la largeur du conteneur */
+  max-width: 200px;
+  transition: transform 0.5s ease;
+}
+
+.animated-item img:active {
+  max-width: 200px;
+  transform: scaleX(-1); 
 }
 
 /* Spécialement pour les emojis */
 .animated-item span {
-  font-size: 10vh; /* Taille de l'emoji */
-  width: 10vh; /* Largeur égale à la hauteur pour obtenir un cercle parfait */
-  height: 10vh; /* Hauteur égale à la largeur pour obtenir un cercle parfait */
-  background-color: #ffffff6e; /* Fond pour voir le halo */
+  font-size: 8vh; /* Taille de l'emoji */
+  width: 8vh; /* Largeur égale à la hauteur pour un cercle parfait */
+  height: 8vh; /* Hauteur égale à la largeur pour un cercle parfait */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 255, 255, 0.1) 100%);
   border-radius: 50%; /* Rendre l'élément circulaire */
   display: inline-flex; /* Utiliser inline-flex pour permettre le centrage de l'emoji */
   justify-content: center; /* Centrer horizontalement */
   align-items: center; /* Centrer verticalement */
-  box-shadow: 0 0 15px rgba(146, 242, 255, 0.466); /* Halo bleu autour de l'emoji */
-  line-height: 15; /* Ajuster la hauteur de ligne pour que l'emoji reste centré */
+  box-shadow: 
+    0 4px 10px rgba(0, 183, 255, 0.5), /* Lumière diffuse bleue */
+    inset 0 -2px 8px rgba(0, 0, 255, 0.2); /* Ombre interne douce */
+  line-height: 1; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation douce pour les interactions */
+  z-index: 10; /* Assurer une bonne superposition */
 }
 
+/* Ajout d'un effet lorsqu'une bulle est survolée */
+.animated-item span:hover {
+  transform: scale(1.5); /* Zoom léger */
+  box-shadow: 
+    0 6px 15px rgba(0, 183, 255, 0.7), /* Lumière plus intense */
+    inset 0 -3px 10px rgba(0, 0, 255, 0.3); /* Ombre interne renforcée */
 }
