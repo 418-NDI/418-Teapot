@@ -1,0 +1,57 @@
+idées principales : 
+-poumons / algues, phytoplanctons : récupération des gazs atmosphériques pour les transformer en nutriments
+	-l'océan absorbe la masse de CO2 par dissolution de ce dernier dans l'eau, ou par la photosynthèse des phytoplanctons.
+	-les phytoplanctons seraient responsable de la moitié de la fixation du carbone sur Terre
+	-les océans rejettent aussi 135 Millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère
+	
+-système sanguin / courants marins : transmission des nutriments/sel
+	-les courants permettent entre autre de faire remonter le sel des profondeurs (où il est ultra présent), ce qui permet :
+		-son utilisation dans le métabolisme des organismes en surface
+		-son élimination par le biais de l'évaporation et autre
+	
+-homéostasie, rein, foie / équilibre salinité, composition des océans
+	-les rivières apportent des minéraux, en particulier du sel
+	-l'évaporation au bord des cotes facilite la précipitation des sels, qui sont donc "absorbés" par les fonds marins
+	-les organismes (plancton) absorbent certains sels, et lors de leur mort, permettent aux fonds marins d'absorber ces sels
+	-les vents rapportent aussi une petite partie des sels vers les continents
+	-trop d'acidité dans les océans c'est mal pour les organismes, genre ça tue les coraux.
+	
+	-l'homéostasie : capacité d'un système à maintenir l'équilibre de son milieu intérieur, quelles que soient les contraintes externes.
+	-si pas régulé : problèmes comme le diabète et tout...
+	-le foie a une grande fonction de stockage de nombreux nutriments, en particulier le glucose
+	-le rein régule aussi la quantité de chlore, sodium, potassium
+	-concrètement : l'apport des rivières correspond à l'alimentation, les fonds marins jouent le rôle du foie, rein, ...
+	
+-transpiration / évaporation ?
+	-l'évaporation permet aux océans de libérer une grande quantité de chaleur à cause de la chaleur latente importante de l'eau (ie la qté d'énergie qu'il faut fournir à 1kg d'eau pour qu'elle passe à l'état gazeux)
+	
+	
+-régulation thermique :
+	-les océans absorbent les radiations solaires, se réchauffent
+	-les courants répartissent cette chaleur dans tous l'océan (de l'équateur où il fait chaud vers les pôles où il fait froid)
+	-sans les courants océaniques, il y aurait 2 fois moins de ces transferts : les différences de climat seraient bien plus fortement marquées
+	-c'est surtout les courants en surface qui participent à ces échanges, ces courants vont de l'équateur et du sud vers le nord
+	-au contraire, les courants en profondeur vont du nord vers le sud. Elles sont mal oxygénées après leur passage en profondeur, et se réoxygènent dans l'hémisphère sud
+	
+	(il y a un BIG parallèle artères/veines à faire ici)
+
+-coraux : abritent une grosse partie de la biodiversité, construisent récifs, protègent littoraux des vagues, Crevent si l'eau est trop chaude
+(OK mais je fais quoi de ces fichues infos)
+
+
+la listes de trucs qu'il pourrait être sympa de rajouter à ces notes/regarder :
+
+comment l'océan régule son acidité (qui de mémoire est causée par l'absorption de CO2)
+ça fait quoi exactement la transpiration (ça évacue la chaleur évidemment mais est-ce que ça évacue d'autres choses ?)
+faire des recherches sur le système sanguin
+idem pour le fonctionnement des poumons
+
+sources :
+http://www2.ggl.ulaval.ca/personnel/bourque/s3/cycles.geoch.html
+https://www.futura-sciences.com/planete/actualites/rechauffement-climatique-climat-modeles-ont-sous-estime-capacites-absorption-co2-ocean-60976/
+https://www.20minutes.fr/planete/3214687-20220114-rechauffement-climatique-comment-temperature-eau-mer-determine-evolution-photosynthese
+https://www.mer-ocean.com/locean-au-coeur-de-notre-oxygene/
+
+https://sante.journaldesfemmes.fr/fiches-maladies/2692703-rein-anatomie-role-taille-problemes-examens-organe-maladie-renale/
+https://sante.journaldesfemmes.fr/fiches-anatomie-et-examens/2538250-foie-schema-anatomie-role/
+https://sante.journaldesfemmes.fr/fiches-anatomie-et-examens/2673305-bile-definition-fonction-role-couleur-maladies-examens/
