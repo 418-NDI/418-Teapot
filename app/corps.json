@@ -1,10 +1,67 @@
 [
     {
         "title" : "cœur",
-        "content" : "Vous êtes dans le cœur, c'est comme les océans car ... infos"
+        "content" : "Vous êtes dans le cœur. \n Le cœur humain est une pompe essentielle : il fait circuler le sang et transporte l'oxygène et les nutriments dans tout le corps. \n Comme le cœur, les courants marins sont les pompes des océans. Ils transportent la chaleur, les nutriments et les gaz dissous à travers la planète, régulant le climat et alimentant les écosystèmes marins.",
+        "info": " Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis."
     },
+
     {
         "title" : "poumons",
-        "content" : "Vous êtes dans les poumons, c'est comme les océans car ... infos"
+        "content" : "Vous êtes ici dans les poumons. \n Les poumons humains respirent : ils absorbent le O2 et le transforment en CO2, en récupérant de l'énergie au passage. \n Comme les poumons, les océans respirent. En effet, les algues et phytoplanctons récupèrent les gazs atmosphériques pour les transformer en nutriments \n Pour les humains, l'équation de la respiration est C6H12O6 + 6 O2 → 6 CO2 + 6 H2O \n Tandis que l'équation de la photosynthèse est  6 CO2 + 6 H2O → C6H12O6 + 6 O2 ",
+        "info": "Les phytoplanctons seraient responsables de la moitié de la fixation du carbone sur Terre. \n  Les océans rejettent aussi 135 Millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère"
+    }, 
+
+    {
+        "title" :"peau",
+        "content" : "Vous êtes sur la peau. \n La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation. \n De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux. \n",
+        "info": "Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique. ", 
+    },
+
+    {
+        "title" :"veines",
+        "content" : "Vous êtes ici dans les veines et artères. \n Les vaisseaux sanguins humains transportent le sang chargé de nutriments et d'oxygène vers toutes les parties du corps. \n Dans l'océan, les courants de profondeur jouent un rôle similaire, transportant les sels nutritifs et l'oxygène dissous depuis les zones polaires jusqu'aux écosystèmes marins tropicaux. ",
+        "info": " La \"circulation thermohaline\", aussi appelée \"ruban transporteur\", prend environ 1 000 ans pour compléter son cycle à travers le globe.", 
+    },
+
+    {
+        "title" :"estomac",
+        "content" : "Vous êtes dans l’estomac. \n L'estomac humain décompose les aliments pour en extraire les nutriments nécessaires à la vie. \n Les océans, eux aussi, sont des « estomacs » planétaires : ils digèrent les matières organiques en surface, permettant aux écosystèmes profonds de survivre grâce à une pluie constante de particules organiques. ",
+        "info": "Ce phénomène s'appelle la \"neige marine\" et constitue une source vitale d'énergie pour les créatures vivant dans les abysses.", 
+    },
+
+    {
+        "title" :"cerveau",
+        "content" : "Vous êtes dans le cerveau. \n Le cerveau humain centralise et coordonne toutes les fonctions vitales du corps, tout en analysant les informations externes. \n De la même manière, les océans sont le \"cerveau\" du climat terrestre, influençant la météo, les vents et les cycles saisonniers grâce à des interactions complexes entre les courants, la température et la salinité. ",
+        "info": "L’océan emmagasine 90 % de la chaleur supplémentaire générée par les activités humaines, jouant un rôle clé dans la régulation climatique.", 
+    },
+
+    {
+        "title" :"intestins",
+        "content" : "Vous êtes dans les intestins. \n Les intestins humains absorbent les nutriments et hébergent un écosystème complexe de bactéries qui contribuent à la santé globale. \n Dans l'océan, les fonds marins fonctionnent de manière similaire : ils abritent des organismes qui recyclent les déchets organiques et minéraux, assurant ainsi la survie des écosystèmes marins. ",
+        "info": "Les sédiments marins contiennent plus de carbone que l’ensemble des forêts terrestres réunies, jouant un rôle majeur dans le stockage à long terme de ce gaz.", 
+    },
+
+    {
+        "title" :"système immunitaire",
+        "content" : "Vous êtes dans le système immunitaire. \n Le système immunitaire protège le corps humain contre les maladies et les infections. \n Les océans, eux aussi, disposent de leurs propres défenses. Les zones de mangroves, herbiers marins et récifs coralliens protègent les côtes contre l'érosion, les tempêtes et les tsunamis, agissant comme un bouclier naturel. ",
+        "info": "Les mangroves réduisent jusqu’à 66 % de l’énergie des vagues, limitant ainsi les dégâts côtiers.", 
+    },
+
+    {
+        "title" :"oreilles",
+        "content" : "Vous êtes dans les oreilles. \n Les oreilles humaines captent les sons, permettant de percevoir le monde environnant. \n Les océans, quant à eux, sont un immense résonateur. Ils transmettent les sons sur des milliers de kilomètres, permettant à des espèces comme les baleines de communiquer sur de grandes distances. ",
+        "info": "Les sons voyagent environ 4,3 fois plus vite dans l'eau que dans l'air, une propriété essentielle pour la vie marine.", 
+    },
+
+    {
+        "title" :"reins",
+        "content" : "Vous êtes dans les reins. \n Les reins humains filtrent le sang pour éliminer les déchets et équilibrer l'eau et les sels dans le corps. \n Les marais salants et estuaires jouent un rôle similaire, filtrant les sédiments, polluants et excès de nutriments avant que l’eau ne retourne dans l’océan. ",
+        "info": "Les marais salants peuvent filtrer jusqu’à 50 % des nitrates et phosphates provenant des activités humaines.", 
+    },
+
+    {
+        "title" :"squelette",
+        "content" : "Vous êtes dans le squelette. \n Le squelette humain soutient le corps et permet le mouvement. \n Dans les océans, les récifs coralliens et les structures calcaires des organismes marins jouent le rôle de \"squelette\", offrant un habitat et un support à des milliers d'espèces. ",
+        "info": "Les récifs coralliens réduisent jusqu'à 97 % de l'énergie des vagues, protégeant ainsi les zones côtières.", 
     }
 ]
