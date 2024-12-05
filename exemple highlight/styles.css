@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.highlightable {
+  margin: 10px 0;
+  padding: 15px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.highlightable:hover {
+  background-color: #ffeb3b;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
