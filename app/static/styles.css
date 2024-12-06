@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  background-image: url('background.png');
+  background-image: url('background_bulles.png');
 }
 
 .entete {
@@ -81,6 +81,9 @@
 }
 
 .sachiez {
+  position: fixed;
+  right: 20px;
+  transform: translateY(-50%);
   width: 10%;
   height: 10%;
 }
@@ -105,14 +108,28 @@ p {
   font-size: 22px;
   margin: 0 5%;
   padding: 18px;
-  background-color: lightgreen;
   border-radius: 8px;
 }
 
 .bouton:hover{
-  background-color: #ff9933;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+}
+
+#on {
+  background-color: lightgreen;
+}
+
+#off {
+  background-color: #ff9933;
+}
+
+#on:hover{
+  background-color: #ff9933;
+}
+
+#off:hover{
+  background-color: lightgreen;
 }
 
 .image-corps{
