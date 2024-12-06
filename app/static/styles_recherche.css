@@ -1,5 +1,4 @@
 body {
-  background-image: url("recherche/Background.png"); 
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed; 
@@ -8,6 +7,10 @@ body {
   overflow: hidden; /* Empêche le débordement */
   justify-content: center; /* Centre horizontalement */
   align-items: center;     /* Centre verticalement */
+}
+
+.main {
+	background-image: url("recherche/Background.png"); 
 }
 
 .animated-item {
