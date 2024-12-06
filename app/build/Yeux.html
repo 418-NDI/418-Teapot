@@ -65,10 +65,13 @@
 <h1>Yeux</h1>
 
 <p>Vous êtes dans les yeux. <br /> Les yeux humains captent la lumière et permettent de percevoir l'environnement. <br /> Les océans, de leur côté, jouent un rôle similaire en captant la lumière du soleil et en la redistribuant dans les profondeurs. Cela influence les cycles de vie des espèces marines et le climat.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>La pénétration de la lumière dans l'océan permet la photosynthèse dans les zones éclairées, soutenant la vie marine.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les océans captent efficacement la lumière et soutiennent les cycles biologiques et climatiques grâce à la photosynthèse.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "L'augmentation de la pollution des océans et de l'acidification affecte la capacité des écosystèmes marins à utiliser la lumière, menaçant les chaînes alimentaires marines.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les océans captent efficacement la lumière et soutiennent les cycles biologiques et climatiques grâce à la photosynthèse.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

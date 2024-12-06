@@ -1,6 +1,14 @@
 [
     {
-        "title" : "Cœur",
+        "title" :"Peau",
+        "content" : "Vous êtes sur la peau. \n La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation. \n De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux. \n",
+        "info": "Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique.",
+        "bon_fonctionnement": "La surface océanique agit comme un régulateur thermique et chimique efficace, soutenant la stabilité climatique.",
+        "mauvais_fonctionnement": "L'augmentation des températures de surface limite l'absorption du CO2, aggravant les effets du réchauffement climatique."
+    },
+    
+    {
+    "title" : "Cœur",
         "content" : "Vous êtes dans le cœur. \n Le cœur humain est une pompe essentielle : il fait circuler le sang et transporte l'oxygène et les nutriments dans tout le corps. \n Comme le cœur, les courants marins sont les pompes des océans. Ils transportent la chaleur, les nutriments et les gaz dissous à travers la planète, régulant le climat et alimentant les écosystèmes marins.",
         "info": "Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis.",
         "bon_fonctionnement": "Les courants marins circulent efficacement, redistribuant chaleur et nutriments, maintenant un équilibre climatique global.",
@@ -13,14 +21,6 @@
         "info": "Les phytoplanctons seraient responsables de la moitié de la fixation du carbone sur Terre. \n  Les océans rejettent aussi 135 millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère.",
         "bon_fonctionnement": "Les phytoplanctons fixent efficacement le CO2 et produisent de l'oxygène, contribuant au maintien de la vie terrestre.",
         "mauvais_fonctionnement": "La pollution et l'acidification des océans réduisent la population de phytoplanctons, perturbant leur rôle écologique clé."
-    },
-
-    {
-        "title" :"Peau",
-        "content" : "Vous êtes sur la peau. \n La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation. \n De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux. \n",
-        "info": "Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique.",
-        "bon_fonctionnement": "La surface océanique agit comme un régulateur thermique et chimique efficace, soutenant la stabilité climatique.",
-        "mauvais_fonctionnement": "L'augmentation des températures de surface limite l'absorption du CO2, aggravant les effets du réchauffement climatique."
     },
 
     {

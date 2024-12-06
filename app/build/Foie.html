@@ -65,10 +65,13 @@
 <h1>Foie</h1>
 
 <p>Vous êtes dans le foie. <br /> Le foie humain détoxifie le sang, décompose les toxines et régule les métabolismes des graisses, des protéines et des glucides. <br /> Les océans ont leur propre foie naturel grâce à des processus de filtration et de détoxification réalisés par les zones littorales comme les mangroves, les herbiers marins et les récifs coralliens.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>Les récifs coralliens et les mangroves jouent un rôle crucial dans la filtration des polluants et le recyclage des nutriments.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les écosystèmes littoraux détoxifient efficacement l'eau et restaurent les habitats marins, soutenant la biodiversité.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "La pollution par les plastiques et les produits chimiques perturbe les fonctions détoxifiantes des écosystèmes littoraux, menaçant leur survie.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les écosystèmes littoraux détoxifient efficacement l'eau et restaurent les habitats marins, soutenant la biodiversité.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

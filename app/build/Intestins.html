@@ -65,10 +65,13 @@
 <h1>Intestins</h1>
 
 <p>Vous êtes dans les intestins. <br /> Les intestins humains absorbent les nutriments et hébergent un écosystème complexe de bactéries qui contribuent à la santé globale. <br /> Dans l'océan, les fonds marins fonctionnent de manière similaire : ils abritent des organismes qui recyclent les déchets organiques et minéraux, assurant ainsi la survie des écosystèmes marins.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>Les sédiments marins contiennent plus de carbone que l’ensemble des forêts terrestres réunies, jouant un rôle majeur dans le stockage à long terme de ce gaz.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les fonds marins recyclent efficacement les nutriments et stockent le carbone, favorisant un équilibre écologique.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "La dégradation des fonds marins par la pollution ou l'exploitation minière compromet ce rôle essentiel.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les fonds marins recyclent efficacement les nutriments et stockent le carbone, favorisant un équilibre écologique.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

@@ -65,10 +65,13 @@
 <h1>Poumons</h1>
 
 <p>Vous êtes ici dans les poumons. <br /> Les poumons humains respirent : ils absorbent le O2 et le transforment en CO2, en récupérant de l'énergie au passage. <br /> Comme les poumons, les océans respirent. En effet, les algues et phytoplanctons récupèrent les gazs atmosphériques pour les transformer en nutriments <br /> Pour les humains, l'équation de la respiration est C6H12O6 + 6 O2 → 6 CO2 + 6 H2O <br /> Tandis que l'équation de la photosynthèse est  6 CO2 + 6 H2O → C6H12O6 + 6 O2 </p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>Les phytoplanctons seraient responsables de la moitié de la fixation du carbone sur Terre. <br />  Les océans rejettent aussi 135 millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les phytoplanctons fixent efficacement le CO2 et produisent de l'oxygène, contribuant au maintien de la vie terrestre.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "La pollution et l'acidification des océans réduisent la population de phytoplanctons, perturbant leur rôle écologique clé.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les phytoplanctons fixent efficacement le CO2 et produisent de l'oxygène, contribuant au maintien de la vie terrestre.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

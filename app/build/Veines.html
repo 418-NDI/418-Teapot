@@ -65,10 +65,13 @@
 <h1>Veines</h1>
 
 <p>Vous êtes ici dans les veines et artères. <br /> Les vaisseaux sanguins humains transportent le sang chargé de nutriments et d'oxygène vers toutes les parties du corps. <br /> Dans l'océan, les courants de profondeur jouent un rôle similaire, transportant les sels nutritifs et l'oxygène dissous depuis les zones polaires jusqu'aux écosystèmes marins tropicaux.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>La "circulation thermohaline", aussi appelée "ruban transporteur", prend environ 1 000 ans pour compléter son cycle à travers le globe.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les courants profonds distribuent efficacement nutriments et oxygène, soutenant les écosystèmes marins.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "Un ralentissement des courants thermohalins peut perturber la distribution de l'oxygène, menaçant la vie marine.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les courants profonds distribuent efficacement nutriments et oxygène, soutenant les écosystèmes marins.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

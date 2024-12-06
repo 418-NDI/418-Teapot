@@ -65,10 +65,13 @@
 <h1>Squelette</h1>
 
 <p>Vous êtes dans le squelette. <br /> Le squelette humain soutient le corps et permet le mouvement. <br /> Dans les océans, les récifs coralliens et les structures calcaires des organismes marins jouent le rôle de "squelette", offrant un habitat et un support à des milliers d'espèces.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>Les récifs coralliens réduisent jusqu'à 97 % de l'énergie des vagues, protégeant ainsi les zones côtières.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les récifs coralliens et les structures calcaires marines soutiennent une grande diversité d'espèces et protègent les côtes.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "La destruction des récifs coralliens par le réchauffement climatique et la pollution menace l'intégrité de ces écosystèmes vitaux.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les récifs coralliens et les structures calcaires marines soutiennent une grande diversité d'espèces et protègent les côtes.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

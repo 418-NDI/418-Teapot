@@ -65,10 +65,13 @@
 <h1>Cerveau</h1>
 
 <p>Vous êtes dans le cerveau. <br /> Le cerveau humain centralise et coordonne toutes les fonctions vitales du corps, tout en analysant les informations externes. <br /> De la même manière, les océans sont le "cerveau" du climat terrestre, influençant la météo, les vents et les cycles saisonniers grâce à des interactions complexes entre les courants, la température et la salinité.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>L’océan emmagasine 90 % de la chaleur supplémentaire générée par les activités humaines, jouant un rôle clé dans la régulation climatique.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les interactions océaniques soutiennent des cycles climatiques stables et prévisibles.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "Une accumulation excessive de chaleur perturbe les cycles climatiques, exacerbant les phénomènes extrêmes comme les tempêtes.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les interactions océaniques soutiennent des cycles climatiques stables et prévisibles.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 

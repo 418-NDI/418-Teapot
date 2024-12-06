@@ -65,10 +65,13 @@
 <h1>Reins</h1>
 
 <p>Vous êtes dans les reins. <br /> Les reins humains filtrent le sang pour éliminer les déchets et équilibrer l'eau et les sels dans le corps. <br /> Les marais salants et estuaires jouent un rôle similaire, filtrant les sédiments, polluants et excès de nutriments avant que l’eau ne retourne dans l’océan.</p>
-<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>Les marais salants peuvent filtrer jusqu’à 50 % des nitrates et phosphates provenant des activités humaines.</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">Les marais salants filtrent efficacement les polluants, améliorant la qualité de l'eau et protégeant les écosystèmes côtiers.</p>
 <script>
@@ -81,9 +84,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "La pollution par les nutriments et les produits chimiques perturbe la capacité des marais salants à filtrer et réguler l'eau, nuisant à la biodiversité.";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "Les marais salants filtrent efficacement les polluants, améliorant la qualité de l'eau et protégeant les écosystèmes côtiers.";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 
