@@ -8,6 +8,8 @@ const emojis = [ // Liste d'emojis
 ]; 
 const supprEnter = ["❌","✅"];
 
+const liens = ["peau", "coeur", "poumons", "estomac", "veines", "cerveau", "intestins", "oreilles", "reins", "foie", "squelette", "yeux", "si"];
+
 const images = [ // Liste d'image
     //"img/cat.gif", 
     //"img/shrek.webp",
@@ -90,8 +92,51 @@ function createEmojiInstance() {
             });
         } else if (action === "✅") {
             actionSpan.addEventListener("click", function() {
-                // Vous pouvez définir ici ce que l'Enter fait, par exemple valider
-                console.log("Text validated: " + inputField.textContent);
+                // Vous pouvez définir ici ce que l'Enter fait, par exemple valider 
+		if (liens.includes(inputField.textContent)){
+		  switch (inputField.textContent){
+			case "peau":
+				window.location.href = "Peau.html";
+				break;
+			case "coeur":
+				window.location.href = "Cœur.html";
+				break;
+            case "poumons":
+                window.location.href = "Poumons.html";
+                break;
+            case "estomac":
+                window.location.href = "Estomac.html";
+                break;
+            case "veines":
+                window.location.href = "Veines.html";
+                break;
+            case "cerveau":
+                window.location.href = "Cerveau.html";
+                break;
+            case "intestins":
+                window.location.href = "Intestins.html";
+                break;
+            case "oreilles":
+                window.location.href = "Oreilles.html";
+                break;
+            case "reins":
+                window.location.href = "Reins.html";
+                break;
+            case "foie":
+                window.location.href = "Foie.html";
+                break;
+            case "squelette":
+                window.location.href = "Squelette.html";
+                break;
+            case "yeux":
+                window.location.href = "Yeux.html";
+                break;
+            case "si":
+                window.location.href = "Système%20immunitaire.html";
+                break;
+            
+		  }
+		}
                 // Ou envoyer le texte à une autre fonction ou effectuer une autre action
             });
         }
