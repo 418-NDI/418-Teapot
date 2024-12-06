@@ -1,0 +1,79 @@
+body {
+  background-image: url("recherche/Background.png"); 
+  background-size: cover; 
+  background-position: center; 
+  background-attachment: fixed; 
+  margin: 0; /* Enlever les marges par défaut */
+  padding: 0; /* Enlever les paddings par défaut */
+  overflow: hidden; /* Empêche le débordement */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
+}
+
+.animated-item {
+  position: absolute;
+  user-select: none; /* Désactive la sélection de texte */
+
+}
+
+/* Spécialement pour les images */
+.animated-item img {
+  max-width: 200px;
+  transition: transform 0.5s ease;
+}
+
+.animated-item img:active {
+  max-width: 200px;
+  transform: scaleX(-1); 
+}
+
+/* Spécialement pour les emojis */
+.animated-item span {
+  font-size: 8vh; /* Taille de l'emoji */
+  width: 8vh; /* Largeur égale à la hauteur pour un cercle parfait */
+  height: 8vh; /* Hauteur égale à la largeur pour un cercle parfait */
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 70%, rgba(255, 255, 255, 0.1) 100%);
+  border-radius: 50%; /* Rendre l'élément circulaire */
+  display: inline-flex; /* Utiliser inline-flex pour permettre le centrage de l'emoji */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center; /* Centrer verticalement */
+  box-shadow: 
+    0 4px 10px rgba(0, 183, 255, 0.5), /* Lumière diffuse bleue */
+    inset 0 -2px 8px rgba(0, 0, 255, 0.2); /* Ombre interne douce */
+  line-height: 1; 
+  transition: transform 0.2s ease, box-shadow 0.2s ease; /* Animation douce pour les interactions */
+  z-index: 10; /* Assurer une bonne superposition */
+}
+
+/* Ajout d'un effet lorsqu'une bulle est survolée */
+.animated-item span:hover {
+  transform: scale(1.5); /* Zoom léger */
+  box-shadow: 
+    0 6px 15px rgba(0, 183, 255, 0.7), /* Lumière plus intense */
+    inset 0 -3px 10px rgba(0, 0, 255, 0.3); /* Ombre interne renforcée */
+}
+
+
+.custom-input {
+  position: absolute;
+  width: 300px;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%); /* Centrer horizontalement */
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 30px; /* Bords très arrondis pour ressembler à une bulle */
+  padding: 10px 20px; /* Plus de padding à droite et à gauche pour un effet de bulle */
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
+  color: #333;
+  user-select: none;
+  background-color: #f9f9f9;
+  outline: none;
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Ombre douce pour l'effet bulle */
+  transition: all 0.3s ease-in-out; /* Transition douce pour l'animation */
+}
+

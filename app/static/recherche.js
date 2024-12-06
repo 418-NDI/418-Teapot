@@ -11,10 +11,10 @@ const supprEnter = ["❌","✅"];
 const images = [ // Liste d'image
     //"img/cat.gif", 
     //"img/shrek.webp",
-    "img/poulpy.png",
-    "img/Hypopooo.png",
-    "img/Torty.png",
-    "img/fished.png"
+    "static/recherche/poulpy.png",
+    "static/recherche/Hypopooo.png",
+    "static/recherche/Torty.png",
+    "static/recherche/fished.png"
 ]; 
 const instances = []; // Liste des instances
 
@@ -170,8 +170,9 @@ window.addEventListener("load", () => {
 
 // Fonction d'animation
 function animate() {
-const screenHeight = window.innerHeight;
-const screenWidth = window.innerWidth;
+    const screenHeightOffset = Math.round(window.innerWidth * 0.1);
+    const screenHeight = window.innerHeight - screenHeightOffset;
+    const screenWidth = window.innerWidth;
 
 instances.forEach((instance) => {
     const element = instance.element;
@@ -179,7 +180,7 @@ instances.forEach((instance) => {
     const elementHeight = element.offsetHeight;
 
     // Gestion des collisions
-    if (instance.y + elementHeight >= screenHeight || instance.y <= 0) {
+    if (instance.y + elementHeight >= screenHeight + screenHeightOffset || instance.y <= screenHeightOffset) {
     instance.dirY *= -1;
     }
     if (instance.x + elementWidth >= screenWidth || instance.x <= 0) {
