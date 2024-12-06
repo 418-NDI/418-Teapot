@@ -1,5 +1,7 @@
 .main {
   height: 100%;
+  background: url('background.png') no-repeat center center;
+  background-size: cover;
 }
 
 .entete {
@@ -82,4 +84,32 @@
 .sachiez {
   width: 75px;
   height: 75px;
+}
+
+h1 {
+ font-family: 'Verdana', sans-serif;
+ text-align: center; 
+}
+
+p {
+  text-size: 14px;
+  font-family: 'Verdana', sans-serif;
+  margin: 2% 5%;
+  padding: 14px;
+  border: 2px dashed #ff99cc;
+  border-radius: 8px;
+}
+
+.bouton{
+  float: right;
+  margin: 0 5%;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 8px;
+}
+
+.bouton:hover{
+  background-color: red;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
