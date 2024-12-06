@@ -1,4 +1,4 @@
-const speed = 1;
+const speed = 0.25;
 const ratioEmojiImg = 0.5;
 const emojis = [ // Liste d'emojis
     "🇦", "🇧", "🇨", "🇩", "🇪", "🇫", "🇬", "🇭", "🇮", "🇯", "🇰", "🇱", 

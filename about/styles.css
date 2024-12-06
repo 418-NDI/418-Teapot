@@ -6,6 +6,8 @@ body {
   margin: 0; /* Enlever les marges par défaut */
   padding: 0; /* Enlever les paddings par défaut */
   overflow: hidden; /* Empêche le débordement */
+  justify-content: center; /* Centre horizontalement */
+  align-items: center;     /* Centre verticalement */
 }
 
 .animated-item {
@@ -49,4 +51,30 @@ body {
   box-shadow: 
     0 6px 15px rgba(0, 183, 255, 0.7), /* Lumière plus intense */
     inset 0 -3px 10px rgba(0, 0, 255, 0.3); /* Ombre interne renforcée */
+}
+
+
+.custom-input {
+  position: absolute;
+  width: 300px;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%); /* Centrer horizontalement */
+  height: 50px;
+  border: 2px solid #000000;
+  border-radius: 30px; /* Bords très arrondis pour ressembler à une bulle */
+  padding: 10px 20px; /* Plus de padding à droite et à gauche pour un effet de bulle */
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  outline: none;
+  display: flex;
+  align-items: center; /* Centrer verticalement */
+  justify-content: center; /* Centrer horizontalement */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4); /* Ombre douce pour l'effet bulle */
+  transition: all 0.3s ease-in-out; /* Transition douce pour l'animation */
+}
+
+.custom-input span {
+  display: inline-block;
 }
