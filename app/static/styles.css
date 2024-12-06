@@ -1,7 +1,6 @@
 .main {
   height: 100%;
-  background: url('background.png') no-repeat center center;
-  background-size: cover;
+  background-image: url('background.png');
 }
 
 .entete {
@@ -92,7 +91,7 @@ h1 {
 }
 
 p {
-  text-size: 14px;
+  font-size: 14px;
   font-family: 'Verdana', sans-serif;
   margin: 2% 5%;
   padding: 14px;
