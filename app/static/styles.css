@@ -81,8 +81,8 @@
 }
 
 .sachiez {
-  width: 75px;
-  height: 75px;
+  width: 10%;
+  height: 10%;
 }
 
 h1 {
@@ -91,28 +91,32 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  background-color: #66d9ff;
+  font-size: 18px;
   font-family: 'Verdana', sans-serif;
   margin: 2% 5%;
   padding: 14px;
-  border: 2px dashed #ff99cc;
+  border: 2px dashed #ff0066;
   border-radius: 8px;
 }
 
 .bouton{
-  float: right;
+  left: 50%;
+  font-size: 22px;
   margin: 0 5%;
-  padding: 10px;
+  padding: 18px;
   background-color: lightgreen;
   border-radius: 8px;
 }
 
 .bouton:hover{
-  background-color: red;
+  background-color: #ff9933;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
 .image-corps{
   position:absolute;
+  margin: 5%;
+  transform: rotateZ(90deg);
 }
