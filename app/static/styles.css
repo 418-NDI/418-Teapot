@@ -81,7 +81,9 @@
 }
 
 .sachiez {
-  margin: auto;
+  width: 7%;
+  height: 7%;
+  text-align: right;
 }
 
 h1 {
@@ -97,6 +99,7 @@ p {
   padding: 14px;
   border: 2px dashed #ff0066;
   border-radius: 8px;
+  text-align: left;
 }
 
 .on, .off{
@@ -110,6 +113,7 @@ p {
 .on:hover, .off:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #9933ff;
 }
 
 .on {
@@ -118,14 +122,6 @@ p {
 
 .off {
   background-color: #ff9933;
-}
-
-.on:hover{
-  background-color: #ff9933;
-}
-
-.off:hover{
-  background-color: lightgreen;
 }
 
 .image-corps{
