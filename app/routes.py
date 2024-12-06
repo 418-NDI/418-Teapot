@@ -20,6 +20,10 @@ def podcast():
 def about():
     return render_template("about.html", collection=get_data().keys())
 
+@app.route('/recherche.html')
+def recherche():
+    return render_template("recherche.html", collection=get_data().keys())
+
 @app.route('/<partie>.html')
 def corps(partie):
     d = get_data()[partie]
