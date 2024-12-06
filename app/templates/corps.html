@@ -8,7 +8,10 @@
 <h1>{{element}}</h1>
 {% autoescape false %}
 <p>{{"<br />".join(desc.split("\n"))}}</p>
-<p><img src="static/ampoule.png" class="sachiez" />Le sachiez-vous ?</p>
+<div class="information">
+  <img src="static/ampoule.png" class="sachiez" />
+  <p class="info-titre">Le sachiez-vous ?</p>
+</div>
 <p>{{"<br />".join(info.split("\n"))}}</p>
 <form>
   <input type="button" value="Tout va bien" class="on"/>

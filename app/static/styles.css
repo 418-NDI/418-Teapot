@@ -129,3 +129,13 @@ p {
   margin: 5%;
   transform: rotateZ(90deg);
 }
+
+.information {
+  display: flex;
+  margin: 2% 5%;
+}
+
+.info-titre {
+  margin-right: 0;
+  width: 100%;
+}
