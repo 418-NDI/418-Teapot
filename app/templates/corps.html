@@ -11,7 +11,7 @@
 <img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
 <p>{{"<br />".join(info.split("\n"))}}</p>
 <form>
-  <input type="button" value="Tout va bien" class="bouton"/>
+  <input type="button" value="Tout va bien" class="on"/>
 </form>
 <p class="consequences">{{alright}}</p>
 <script>
@@ -24,9 +24,11 @@
     if (btn.value === "Tout va bien") {
       btn.value = "Tout va mal";
       txt.textContent = "{{albad}}";
+      btn.classList.replace('on', 'off');
     } else {
       btn.value = "Tout va bien";
       txt.textContent = "{{alright}}";
+      btn.classList.replace('off', 'on');
     }
   }
 </script> 
