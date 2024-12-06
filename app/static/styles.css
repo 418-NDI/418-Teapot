@@ -144,4 +144,7 @@ p {
 .info-titre {
   margin-right: 0;
   width: 100%;
+  font-size:150%;
+  background-color: yellow;
+  font-weight: bold;
 }
