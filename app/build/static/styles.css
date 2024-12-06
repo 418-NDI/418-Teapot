@@ -1,6 +1,6 @@
 .main {
   height: 100%;
-  background-image: url('background.png');
+  background-image: url('background_bulles.png');
 }
 
 .entete {
@@ -81,8 +81,9 @@
 }
 
 .sachiez {
-  width: 75px;
-  height: 75px;
+  width: 7%;
+  height: 7%;
+  text-align: right;
 }
 
 h1 {
@@ -91,28 +92,65 @@ h1 {
 }
 
 p {
-  font-size: 14px;
+  background-color: #66d9ff;
+  font-size: 18px;
   font-family: 'Verdana', sans-serif;
   margin: 2% 5%;
   padding: 14px;
-  border: 2px dashed #ff99cc;
+  border: 2px dashed #ff0066;
   border-radius: 8px;
+  text-align: left;
 }
 
-.bouton{
-  float: right;
+.on, .off{
+  left: 50%;
+  font-size: 22px;
   margin: 0 5%;
-  padding: 10px;
-  background-color: lightgreen;
+  padding: 18px;
   border-radius: 8px;
 }
 
-.bouton:hover{
-  background-color: red;
+.on:hover, .off:hover{
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   cursor: pointer;
+  background-color: #9933ff;
+}
+
+.on {
+  background-color: lightgreen;
+}
+
+.off {
+  background-color: #ff9933;
 }
 
 .image-corps{
   position:absolute;
+  margin: 5%;
+  transform: rotateZ(90deg);
+}
+
+.bouton-organe{
+	margin-left: auto; 
+	margin-right: 10%;
+  margin-bottom: 0;
+  margin-top: 0;
+	width: 500px;
+}
+
+.information {
+  display: flex;
+  margin: 2% 5%;
+}
+
+.info-titre {
+  margin-right: 0;
+  width: 100%;
+  font-size:150%;
+  background-color: yellow;
+  font-weight: bold;
+}
+
+audio {
+  width: 100%;
 }
