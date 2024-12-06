@@ -12,30 +12,33 @@
     <p>Vous êtes dans le cœur. L'humain et l'océan ont tous les deux un cœur ...</p>
     
     <form>
-        <input type="button" value="Tout va bien" class="boutton"/>
+        <input type="button" value="Tout va bien" id="on" class="boutton"/>
     </form>
-    <p class="consequences">Le texte si tout va bien</p>
+    <p id="consequences">Le texte si tout va bien</p>
     
     <script>
-        var btn = document.querySelector("input");
-        var txt = document.querySelector(".consequences");
-
+        var btn = document.querySelector(".boutton");
+        var txt = document.querySelector("#consequences");
+    
         btn.addEventListener("click", updateBtn);
-
+    
         function updateBtn() {
-        if (btn.value === "Tout va bien") {
-            btn.value = "Tout va mal";
-            txt.textContent = "Le texte si tout va mal";
-        } else {
-            btn.value = "Tout va bien";
-            txt.textContent = "Le texte si tout va bien ";
+            if (btn.id === "on") {
+                btn.id = "off";
+                btn.value = "Tout va mal";
+                txt.textContent = "Le texte si tout va mal";
+            } else {
+                btn.id = "on";
+                btn.value = "Tout va bien";
+                txt.textContent = "Le texte si tout va bien";
+            }
         }
-        }
-    </script> 
+    </script>
 
 
 
-    <img src="../ampoule.png" class="sachiez" /><p>Le sachiez-vous ? </p>
+
+    <img src="../app/static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ? </p>
     <p>Info intéressante mais là j'en ai pas</p>
 </body>
 </html>
