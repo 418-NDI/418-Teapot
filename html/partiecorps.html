@@ -12,7 +12,7 @@
     <p>Vous êtes dans le cœur. L'humain et l'océan ont tous les deux un cœur ...</p>
     
     <form>
-        <input type="button" value="Tout va bien" id="on" class="bouton"/>
+        <input type="button" value="Tout va bien" class="on"/>
     </form>
     <p id="consequences">Le texte si tout va bien</p>
     
@@ -23,18 +23,19 @@
         btn.addEventListener("click", updateBtn);
     
         function updateBtn() {
-            if (btn.id === "on") {
-                btn.id = "off";
-                btn.value = "Tout va mal";
-                txt.textContent = "Le texte si tout va mal";
-            } else {
-                btn.id = "on";
-                btn.value = "Tout va bien";
-                txt.textContent = "Le texte si tout va bien";
-            }
+        if (btn.value === "Tout va bien") {
+            btn.value = "Tout va mal";
+            btn.classList.remove("on");
+            btn.classList.add("off");
+            txt.textContent = "Le texte si tout va mal";
+        } else {
+            btn.value = "Tout va bien";
+            btn.classList.remove("off");
+            btn.classList.add("on");
+            txt.textContent = "Le texte si tout va bien";
         }
-    </script>
-
+    }
+</script>
 
 
 
