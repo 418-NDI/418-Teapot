@@ -150,3 +150,7 @@ p {
   background-color: yellow;
   font-weight: bold;
 }
+
+audio {
+  width: 100%;
+}
