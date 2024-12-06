@@ -1,5 +1,5 @@
 function animSelectionEntreeSouris(event){
-	setOpaciteImages(event.target.className);
+	setOpaciteImages(event.target.classList[0]);
 }
 
 function animSelectionSortieSouris(event){
