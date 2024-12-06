@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Yeux</h1>
+
+<p>Vous êtes dans les yeux. <br /> Les yeux humains captent la lumière et permettent de percevoir l'environnement. <br /> Les océans, de leur côté, jouent un rôle similaire en captant la lumière du soleil et en la redistribuant dans les profondeurs. Cela influence les cycles de vie des espèces marines et le climat.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>La pénétration de la lumière dans l'océan permet la photosynthèse dans les zones éclairées, soutenant la vie marine.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les océans captent efficacement la lumière et soutiennent les cycles biologiques et climatiques grâce à la photosynthèse.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "L'augmentation de la pollution des océans et de l'acidification affecte la capacité des écosystèmes marins à utiliser la lumière, menaçant les chaînes alimentaires marines.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les océans captent efficacement la lumière et soutiennent les cycles biologiques et climatiques grâce à la photosynthèse.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

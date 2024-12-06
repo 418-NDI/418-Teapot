@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Cœur</h1>
+
+<p>Vous êtes dans le cœur. <br /> Le cœur humain est une pompe essentielle : il fait circuler le sang et transporte l'oxygène et les nutriments dans tout le corps. <br /> Comme le cœur, les courants marins sont les pompes des océans. Ils transportent la chaleur, les nutriments et les gaz dissous à travers la planète, régulant le climat et alimentant les écosystèmes marins.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les courants marins circulent efficacement, redistribuant chaleur et nutriments, maintenant un équilibre climatique global.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "Le ralentissement ou la perturbation des courants, souvent causé par le réchauffement climatique, provoque des déséquilibres thermiques et écologiques.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les courants marins circulent efficacement, redistribuant chaleur et nutriments, maintenant un équilibre climatique global.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

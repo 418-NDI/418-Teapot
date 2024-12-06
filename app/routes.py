@@ -5,7 +5,7 @@ import json
 def get_data():
     with open('app/corps.json') as file:
         data = json.load(file)
-    return {d['title'] : [d['content'], d['info']] for d in data}
+    return {d['title'] : [d['content'], d['info'], d['bon_fonctionnement'], d['mauvais_fonctionnement']] for d in data}
 
 @app.route('/')
 @app.route('/index.html')
@@ -23,4 +23,12 @@ def about():
 @app.route('/<partie>.html')
 def corps(partie):
     d = get_data()[partie]
-    return render_template("corps.html", element=partie, desc = d[0], info = d[1], collection=get_data().keys())
+    return render_template(
+        "corps.html",
+        element=partie,
+        desc = d[0],
+        info = d[1],
+        alright = d[2],
+        albad = d[3],
+        collection=get_data().keys()
+        )

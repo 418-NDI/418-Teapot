@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Oreilles</h1>
+
+<p>Vous êtes dans les oreilles. <br /> Les oreilles humaines captent les sons, permettant de percevoir le monde environnant. <br /> Les océans, quant à eux, sont un immense résonateur. Ils transmettent les sons sur des milliers de kilomètres, permettant à des espèces comme les baleines de communiquer sur de grandes distances. </p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les sons voyagent environ 4,3 fois plus vite dans l'eau que dans l'air, une propriété essentielle pour la vie marine.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les océans permettent une communication longue distance entre les espèces marines, ce qui est crucial pour leur survie.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "Le bruit sous-marin causé par l'activité humaine perturbe les capacités de communication et de navigation des animaux marins.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les océans permettent une communication longue distance entre les espèces marines, ce qui est crucial pour leur survie.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

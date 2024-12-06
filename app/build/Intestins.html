@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Intestins</h1>
+
+<p>Vous êtes dans les intestins. <br /> Les intestins humains absorbent les nutriments et hébergent un écosystème complexe de bactéries qui contribuent à la santé globale. <br /> Dans l'océan, les fonds marins fonctionnent de manière similaire : ils abritent des organismes qui recyclent les déchets organiques et minéraux, assurant ainsi la survie des écosystèmes marins.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les sédiments marins contiennent plus de carbone que l’ensemble des forêts terrestres réunies, jouant un rôle majeur dans le stockage à long terme de ce gaz.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les fonds marins recyclent efficacement les nutriments et stockent le carbone, favorisant un équilibre écologique.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "La dégradation des fonds marins par la pollution ou l'exploitation minière compromet ce rôle essentiel.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les fonds marins recyclent efficacement les nutriments et stockent le carbone, favorisant un équilibre écologique.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

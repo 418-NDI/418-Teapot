@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Cerveau</h1>
+
+<p>Vous êtes dans le cerveau. <br /> Le cerveau humain centralise et coordonne toutes les fonctions vitales du corps, tout en analysant les informations externes. <br /> De la même manière, les océans sont le "cerveau" du climat terrestre, influençant la météo, les vents et les cycles saisonniers grâce à des interactions complexes entre les courants, la température et la salinité.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>L’océan emmagasine 90 % de la chaleur supplémentaire générée par les activités humaines, jouant un rôle clé dans la régulation climatique.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les interactions océaniques soutiennent des cycles climatiques stables et prévisibles.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "Une accumulation excessive de chaleur perturbe les cycles climatiques, exacerbant les phénomènes extrêmes comme les tempêtes.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les interactions océaniques soutiennent des cycles climatiques stables et prévisibles.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

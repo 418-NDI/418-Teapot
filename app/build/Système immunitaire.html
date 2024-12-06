@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Système immunitaire</h1>
+
+<p>Vous êtes dans le système immunitaire. <br /> Le système immunitaire protège le corps humain contre les maladies et les infections. <br /> Les océans, eux aussi, disposent de leurs propres défenses. Les zones de mangroves, herbiers marins et récifs coralliens protègent les côtes contre l'érosion, les tempêtes et les tsunamis, agissant comme un bouclier naturel. </p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les mangroves réduisent jusqu’à 66 % de l’énergie des vagues, limitant ainsi les dégâts côtiers.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les écosystèmes côtiers protègent efficacement les rivages et soutiennent la biodiversité.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "La destruction des mangroves et des récifs coralliens expose les côtes à des risques accrus d’érosion et de tempêtes.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les écosystèmes côtiers protègent efficacement les rivages et soutiennent la biodiversité.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

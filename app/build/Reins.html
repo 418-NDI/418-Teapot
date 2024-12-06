@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Reins</h1>
+
+<p>Vous êtes dans les reins. <br /> Les reins humains filtrent le sang pour éliminer les déchets et équilibrer l'eau et les sels dans le corps. <br /> Les marais salants et estuaires jouent un rôle similaire, filtrant les sédiments, polluants et excès de nutriments avant que l’eau ne retourne dans l’océan.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les marais salants peuvent filtrer jusqu’à 50 % des nitrates et phosphates provenant des activités humaines.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les marais salants filtrent efficacement les polluants, améliorant la qualité de l'eau et protégeant les écosystèmes côtiers.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "La pollution par les nutriments et les produits chimiques perturbe la capacité des marais salants à filtrer et réguler l'eau, nuisant à la biodiversité.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les marais salants filtrent efficacement les polluants, améliorant la qualité de l'eau et protégeant les écosystèmes côtiers.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

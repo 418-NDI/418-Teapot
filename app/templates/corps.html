@@ -10,5 +10,25 @@
 <p>{{"<br />".join(desc.split("\n"))}}</p>
 <img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
 <p>{{"<br />".join(info.split("\n"))}}</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">{{alright}}</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "{{albad}}";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "{{alright}}";
+    }
+  }
+</script> 
 {% endautoescape %}
 {% endblock %}

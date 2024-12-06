@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Peau</h1>
+
+<p>Vous êtes sur la peau. <br /> La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation. <br /> De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux. <br /></p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">La surface océanique agit comme un régulateur thermique et chimique efficace, soutenant la stabilité climatique.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "L'augmentation des températures de surface limite l'absorption du CO2, aggravant les effets du réchauffement climatique.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "La surface océanique agit comme un régulateur thermique et chimique efficace, soutenant la stabilité climatique.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

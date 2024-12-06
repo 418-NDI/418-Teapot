@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Estomac</h1>
+
+<p>Vous êtes dans l’estomac. <br /> L'estomac humain décompose les aliments pour en extraire les nutriments nécessaires à la vie. <br /> Les océans, eux aussi, sont des « estomacs » planétaires : ils digèrent les matières organiques en surface, permettant aux écosystèmes profonds de survivre grâce à une pluie constante de particules organiques.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Ce phénomène s'appelle la "neige marine" et constitue une source vitale d'énergie pour les créatures vivant dans les abysses.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">La neige marine alimente efficacement les écosystèmes des abysses, favorisant la biodiversité.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "La pollution plastique et chimique altère la qualité et la quantité de neige marine, impactant les écosystèmes profonds.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "La neige marine alimente efficacement les écosystèmes des abysses, favorisant la biodiversité.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

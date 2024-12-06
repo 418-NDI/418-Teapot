@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Foie</h1>
+
+<p>Vous êtes dans le foie. <br /> Le foie humain détoxifie le sang, décompose les toxines et régule les métabolismes des graisses, des protéines et des glucides. <br /> Les océans ont leur propre foie naturel grâce à des processus de filtration et de détoxification réalisés par les zones littorales comme les mangroves, les herbiers marins et les récifs coralliens.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>Les récifs coralliens et les mangroves jouent un rôle crucial dans la filtration des polluants et le recyclage des nutriments.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les écosystèmes littoraux détoxifient efficacement l'eau et restaurent les habitats marins, soutenant la biodiversité.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "La pollution par les plastiques et les produits chimiques perturbe les fonctions détoxifiantes des écosystèmes littoraux, menaçant leur survie.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les écosystèmes littoraux détoxifient efficacement l'eau et restaurent les habitats marins, soutenant la biodiversité.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>

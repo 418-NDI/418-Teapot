@@ -62,10 +62,32 @@
 <div class="wave-transition"></div>
 
   
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<img src="static/cat.gif" class="highlightable"/>
-<script src="static/script.js"></script>
+<h1>Veines</h1>
+
+<p>Vous êtes ici dans les veines et artères. <br /> Les vaisseaux sanguins humains transportent le sang chargé de nutriments et d'oxygène vers toutes les parties du corps. <br /> Dans l'océan, les courants de profondeur jouent un rôle similaire, transportant les sels nutritifs et l'oxygène dissous depuis les zones polaires jusqu'aux écosystèmes marins tropicaux.</p>
+<img src="static/ampoule.png" class="sachiez" /><p>Le sachiez-vous ?</p>
+<p>La "circulation thermohaline", aussi appelée "ruban transporteur", prend environ 1 000 ans pour compléter son cycle à travers le globe.</p>
+<form>
+  <input type="button" value="Tout va bien" class="boutton"/>
+</form>
+<p class="consequences">Les courants profonds distribuent efficacement nutriments et oxygène, soutenant les écosystèmes marins.</p>
+<script>
+  var btn = document.querySelector("input");
+  var txt = document.querySelector(".consequences");
+  
+  btn.addEventListener("click", updateBtn);
+  
+  function updateBtn() {
+    if (btn.value === "Tout va bien") {
+      btn.value = "Tout va mal";
+      txt.textContent = "Un ralentissement des courants thermohalins peut perturber la distribution de l'oxygène, menaçant la vie marine.";
+    } else {
+      btn.value = "Tout va bien";
+      txt.textContent = "Les courants profonds distribuent efficacement nutriments et oxygène, soutenant les écosystèmes marins.";
+    }
+  }
+</script> 
+
 
 </body>
 </html>
