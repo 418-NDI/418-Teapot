@@ -1,5 +1,5 @@
 body {
-  background-image: url("img/Background_.png"); 
+  background-image: url("img/Background.png"); 
   background-size: cover; 
   background-position: center; 
   background-attachment: fixed; 
@@ -64,8 +64,10 @@ body {
   border: 2px solid #000000;
   border-radius: 30px; /* Bords très arrondis pour ressembler à une bulle */
   padding: 10px 20px; /* Plus de padding à droite et à gauche pour un effet de bulle */
-  font-size: 16px;
+  font-size: 30px;
+  font-family: 'Lobster', cursive;
   color: #333;
+  user-select: none;
   background-color: #f9f9f9;
   outline: none;
   display: flex;
@@ -75,6 +77,3 @@ body {
   transition: all 0.3s ease-in-out; /* Transition douce pour l'animation */
 }
 
-.custom-input span {
-  display: inline-block;
-}

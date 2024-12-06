@@ -1,10 +1,13 @@
-const speed = 0.25;
-const ratioEmojiImg = 0.5;
+const speed = 1;
+const ratioEmojiImg = 0.2;
+const inputField = document.getElementById("customInput");
 const emojis = [ // Liste d'emojis
-    "🇦", "🇧", "🇨", "🇩", "🇪", "🇫", "🇬", "🇭", "🇮", "🇯", "🇰", "🇱", 
-    "🇲", "🇳", "🇴", "🇵", "🇶", "🇷", "🇸", "🇹", "🇺", "🇻", "🇼", "🇽", 
-    "🇾", "🇿"
+    "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+    "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x",
+    "y", "z"
 ]; 
+const supprEnter = ["❌","✅"];
+
 const images = [ // Liste d'image
     //"img/cat.gif", 
     //"img/shrek.webp",
@@ -31,6 +34,8 @@ if (isEmoji) {
     return { type: 'image', content: images[randomIndex] };
 }
 }
+
+
 
 // Fonction pour créer une nouvelle instance (emoji ou image)
 function createItemInstance() {
@@ -68,6 +73,44 @@ function createItemInstance() {
     }
     //Fonction pour créer toute les instances de lettre
 function createEmojiInstance() {
+
+    supprEnter.forEach((action) => {
+        const itemElement = document.createElement("div");
+        itemElement.classList.add("animated-item");
+
+        // Créer un élément pour l'action ("Suppr" ou "Enter")
+        const actionSpan = document.createElement("span");
+        actionSpan.textContent = action;
+        actionSpan.style.fontSize = "10vh"; // Taille des actions (vous pouvez l'ajuster)
+
+        // Ajouter un événement spécifique pour chaque action
+        if (action === "❌") {
+            actionSpan.addEventListener("click", function() {
+                inputField.textContent = ""; // Supprimer tout le texte dans le champ
+            });
+        } else if (action === "✅") {
+            actionSpan.addEventListener("click", function() {
+                // Vous pouvez définir ici ce que l'Enter fait, par exemple valider
+                console.log("Text validated: " + inputField.textContent);
+                // Ou envoyer le texte à une autre fonction ou effectuer une autre action
+            });
+        }
+
+        itemElement.appendChild(actionSpan);
+
+        // Créer un objet pour l'instance
+        const instance = {
+            element: itemElement,
+            x: window.innerWidth / 2,
+            y: window.innerHeight / 2,
+            dirX: getRandomDirection() * (Math.random() < 0.5 ? 1 : -1),
+            dirY: getRandomDirection() * (Math.random() < 0.5 ? 1 : -1),
+        };
+
+        document.body.appendChild(itemElement);
+        instances.push(instance);
+    });
+
     emojis.forEach(emoji => {
     const itemElement = document.createElement("div");
     itemElement.classList.add("animated-item");
@@ -76,7 +119,11 @@ function createEmojiInstance() {
     const emojiSpan = document.createElement("span");
     emojiSpan.textContent = emoji;
     emojiSpan.style.fontSize = "10vh"; // Taille des emojis
-    emojiSpan.addEventListener("click", () => handleEmojiClick(emoji));
+    //emojiSpan.addEventListener("click", () => handleEmojiClick(emoji));
+
+    emojiSpan.addEventListener("click", function() {
+        inputField.textContent += emoji;  // Ajouter la lettre dans le champ
+      });
 
     itemElement.appendChild(emojiSpan);
 
@@ -96,21 +143,9 @@ function createEmojiInstance() {
     });
 }
 
-function handleEmojiClick(emoji) {
-    switch (emoji) {
-        case "🇦":
-            alert("Vous avez cliqué sur 🇦 !");
-            break;
-        case "🇧":
-            alert("Vous avez cliqué sur 🇧 !");
-            break;
-        default:
-            alert(`Vous avez cliqué sur ${emoji} !`);
-    }
-}
 
 function initJs(){
-    for (let i = 0; i < 5; i++) {
+    for (let i = 0; i < 10; i++) {
         createItemInstance();
     }
     createEmojiInstance();
