@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block head %}
+<script src="static/scriptSelection.js"> </script>
 {% endblock %}
 
 
@@ -12,7 +13,7 @@
 {% endfor %}
 <ul>
   {% for element in collection %}
-    <a href= "{{ url_for('corps', partie = element)[1:] }}"><p class="{{element.lower()}}">{{element}}</p></a>
+    <a href= "{{ url_for('corps', partie = element)[1:] }}"><p class="{{element.lower()}} bouton-organe" onmouseenter="animSelectionEntreeSouris(event)" onmouseleave="animSelectionSortieSouris(event)">{{element}}</p></a>
   {% endfor %}
 </ul>
 
