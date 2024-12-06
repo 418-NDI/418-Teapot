@@ -1,67 +1,106 @@
 [
     {
-        "title" : "cœur",
+        "title" : "Cœur",
         "content" : "Vous êtes dans le cœur. \n Le cœur humain est une pompe essentielle : il fait circuler le sang et transporte l'oxygène et les nutriments dans tout le corps. \n Comme le cœur, les courants marins sont les pompes des océans. Ils transportent la chaleur, les nutriments et les gaz dissous à travers la planète, régulant le climat et alimentant les écosystèmes marins.",
-        "info": " Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis."
+        "info": "Le Gulf Stream, un courant marin majeur, transporte jusqu'à 20 millions de mètres cubes d'eau par seconde, l'équivalent de 100 fois le débit de tous les fleuves du monde réunis.",
+        "bon_fonctionnement": "Les courants marins circulent efficacement, redistribuant chaleur et nutriments, maintenant un équilibre climatique global.",
+        "mauvais_fonctionnement": "Le ralentissement ou la perturbation des courants, souvent causé par le réchauffement climatique, provoque des déséquilibres thermiques et écologiques."
     },
 
     {
-        "title" : "poumons",
+        "title" : "Poumons",
         "content" : "Vous êtes ici dans les poumons. \n Les poumons humains respirent : ils absorbent le O2 et le transforment en CO2, en récupérant de l'énergie au passage. \n Comme les poumons, les océans respirent. En effet, les algues et phytoplanctons récupèrent les gazs atmosphériques pour les transformer en nutriments \n Pour les humains, l'équation de la respiration est C6H12O6 + 6 O2 → 6 CO2 + 6 H2O \n Tandis que l'équation de la photosynthèse est  6 CO2 + 6 H2O → C6H12O6 + 6 O2 ",
-        "info": "Les phytoplanctons seraient responsables de la moitié de la fixation du carbone sur Terre. \n  Les océans rejettent aussi 135 Millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère"
-    }, 
+        "info": "Les phytoplanctons seraient responsables de la moitié de la fixation du carbone sur Terre. \n  Les océans rejettent aussi 135 millions de tonnes d'oxygène par an, soit la moitié de l'oxygène présent dans l'atmosphère.",
+        "bon_fonctionnement": "Les phytoplanctons fixent efficacement le CO2 et produisent de l'oxygène, contribuant au maintien de la vie terrestre.",
+        "mauvais_fonctionnement": "La pollution et l'acidification des océans réduisent la population de phytoplanctons, perturbant leur rôle écologique clé."
+    },
 
     {
-        "title" :"peau",
+        "title" :"Peau",
         "content" : "Vous êtes sur la peau. \n La peau humaine protège le corps contre les agressions extérieures, régule la température et maintient l'hydratation. \n De même, la surface des océans agit comme une barrière entre l'atmosphère et les profondeurs. Elle absorbe le CO2, redistribue la chaleur et influence les échanges climatiques mondiaux. \n",
-        "info": "Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique. "
+        "info": "Les océans absorbent environ 30 % du CO2 produit par les activités humaines, ralentissant ainsi le réchauffement climatique.",
+        "bon_fonctionnement": "La surface océanique agit comme un régulateur thermique et chimique efficace, soutenant la stabilité climatique.",
+        "mauvais_fonctionnement": "L'augmentation des températures de surface limite l'absorption du CO2, aggravant les effets du réchauffement climatique."
     },
 
     {
-        "title" :"veines",
-        "content" : "Vous êtes ici dans les veines et artères. \n Les vaisseaux sanguins humains transportent le sang chargé de nutriments et d'oxygène vers toutes les parties du corps. \n Dans l'océan, les courants de profondeur jouent un rôle similaire, transportant les sels nutritifs et l'oxygène dissous depuis les zones polaires jusqu'aux écosystèmes marins tropicaux. ",
-        "info": " La \"circulation thermohaline\", aussi appelée \"ruban transporteur\", prend environ 1 000 ans pour compléter son cycle à travers le globe."
+        "title" :"Veines",
+        "content" : "Vous êtes ici dans les veines et artères. \n Les vaisseaux sanguins humains transportent le sang chargé de nutriments et d'oxygène vers toutes les parties du corps. \n Dans l'océan, les courants de profondeur jouent un rôle similaire, transportant les sels nutritifs et l'oxygène dissous depuis les zones polaires jusqu'aux écosystèmes marins tropicaux.",
+        "info": "La \"circulation thermohaline\", aussi appelée \"ruban transporteur\", prend environ 1 000 ans pour compléter son cycle à travers le globe.",
+        "bon_fonctionnement": "Les courants profonds distribuent efficacement nutriments et oxygène, soutenant les écosystèmes marins.",
+        "mauvais_fonctionnement": "Un ralentissement des courants thermohalins peut perturber la distribution de l'oxygène, menaçant la vie marine."
     },
 
     {
-        "title" :"estomac",
-        "content" : "Vous êtes dans l’estomac. \n L'estomac humain décompose les aliments pour en extraire les nutriments nécessaires à la vie. \n Les océans, eux aussi, sont des « estomacs » planétaires : ils digèrent les matières organiques en surface, permettant aux écosystèmes profonds de survivre grâce à une pluie constante de particules organiques. ",
-        "info": "Ce phénomène s'appelle la \"neige marine\" et constitue une source vitale d'énergie pour les créatures vivant dans les abysses."
+        "title" :"Estomac",
+        "content" : "Vous êtes dans l’estomac. \n L'estomac humain décompose les aliments pour en extraire les nutriments nécessaires à la vie. \n Les océans, eux aussi, sont des « estomacs » planétaires : ils digèrent les matières organiques en surface, permettant aux écosystèmes profonds de survivre grâce à une pluie constante de particules organiques.",
+        "info": "Ce phénomène s'appelle la \"neige marine\" et constitue une source vitale d'énergie pour les créatures vivant dans les abysses.",
+        "bon_fonctionnement": "La neige marine alimente efficacement les écosystèmes des abysses, favorisant la biodiversité.",
+        "mauvais_fonctionnement": "La pollution plastique et chimique altère la qualité et la quantité de neige marine, impactant les écosystèmes profonds."
     },
 
     {
-        "title" :"cerveau",
-        "content" : "Vous êtes dans le cerveau. \n Le cerveau humain centralise et coordonne toutes les fonctions vitales du corps, tout en analysant les informations externes. \n De la même manière, les océans sont le \"cerveau\" du climat terrestre, influençant la météo, les vents et les cycles saisonniers grâce à des interactions complexes entre les courants, la température et la salinité. ",
-        "info": "L’océan emmagasine 90 % de la chaleur supplémentaire générée par les activités humaines, jouant un rôle clé dans la régulation climatique."
+        "title" :"Cerveau",
+        "content" : "Vous êtes dans le cerveau. \n Le cerveau humain centralise et coordonne toutes les fonctions vitales du corps, tout en analysant les informations externes. \n De la même manière, les océans sont le \"cerveau\" du climat terrestre, influençant la météo, les vents et les cycles saisonniers grâce à des interactions complexes entre les courants, la température et la salinité.",
+        "info": "L’océan emmagasine 90 % de la chaleur supplémentaire générée par les activités humaines, jouant un rôle clé dans la régulation climatique.",
+        "bon_fonctionnement": "Les interactions océaniques soutiennent des cycles climatiques stables et prévisibles.",
+        "mauvais_fonctionnement": "Une accumulation excessive de chaleur perturbe les cycles climatiques, exacerbant les phénomènes extrêmes comme les tempêtes."
     },
 
     {
-        "title" :"intestins",
-        "content" : "Vous êtes dans les intestins. \n Les intestins humains absorbent les nutriments et hébergent un écosystème complexe de bactéries qui contribuent à la santé globale. \n Dans l'océan, les fonds marins fonctionnent de manière similaire : ils abritent des organismes qui recyclent les déchets organiques et minéraux, assurant ainsi la survie des écosystèmes marins. ",
-        "info": "Les sédiments marins contiennent plus de carbone que l’ensemble des forêts terrestres réunies, jouant un rôle majeur dans le stockage à long terme de ce gaz."
+        "title" :"Intestins",
+        "content" : "Vous êtes dans les intestins. \n Les intestins humains absorbent les nutriments et hébergent un écosystème complexe de bactéries qui contribuent à la santé globale. \n Dans l'océan, les fonds marins fonctionnent de manière similaire : ils abritent des organismes qui recyclent les déchets organiques et minéraux, assurant ainsi la survie des écosystèmes marins.",
+        "info": "Les sédiments marins contiennent plus de carbone que l’ensemble des forêts terrestres réunies, jouant un rôle majeur dans le stockage à long terme de ce gaz.",
+        "bon_fonctionnement": "Les fonds marins recyclent efficacement les nutriments et stockent le carbone, favorisant un équilibre écologique.",
+        "mauvais_fonctionnement": "La dégradation des fonds marins par la pollution ou l'exploitation minière compromet ce rôle essentiel."
     },
 
     {
-        "title" :"système immunitaire",
+        "title" :"Système immunitaire",
         "content" : "Vous êtes dans le système immunitaire. \n Le système immunitaire protège le corps humain contre les maladies et les infections. \n Les océans, eux aussi, disposent de leurs propres défenses. Les zones de mangroves, herbiers marins et récifs coralliens protègent les côtes contre l'érosion, les tempêtes et les tsunamis, agissant comme un bouclier naturel. ",
-        "info": "Les mangroves réduisent jusqu’à 66 % de l’énergie des vagues, limitant ainsi les dégâts côtiers."
+        "info": "Les mangroves réduisent jusqu’à 66 % de l’énergie des vagues, limitant ainsi les dégâts côtiers.",
+        "bon_fonctionnement": "Les écosystèmes côtiers protègent efficacement les rivages et soutiennent la biodiversité.",
+        "mauvais_fonctionnement": "La destruction des mangroves et des récifs coralliens expose les côtes à des risques accrus d’érosion et de tempêtes."
     },
 
     {
-        "title" :"oreilles",
+        "title" :"Oreilles",
         "content" : "Vous êtes dans les oreilles. \n Les oreilles humaines captent les sons, permettant de percevoir le monde environnant. \n Les océans, quant à eux, sont un immense résonateur. Ils transmettent les sons sur des milliers de kilomètres, permettant à des espèces comme les baleines de communiquer sur de grandes distances. ",
-        "info": "Les sons voyagent environ 4,3 fois plus vite dans l'eau que dans l'air, une propriété essentielle pour la vie marine."
+        "info": "Les sons voyagent environ 4,3 fois plus vite dans l'eau que dans l'air, une propriété essentielle pour la vie marine.",
+        "bon_fonctionnement": "Les océans permettent une communication longue distance entre les espèces marines, ce qui est crucial pour leur survie.",
+        "mauvais_fonctionnement": "Le bruit sous-marin causé par l'activité humaine perturbe les capacités de communication et de navigation des animaux marins."
+    },
+
+
+    {
+        "title" : "Reins",
+        "content" : "Vous êtes dans les reins. \n Les reins humains filtrent le sang pour éliminer les déchets et équilibrer l'eau et les sels dans le corps. \n Les marais salants et estuaires jouent un rôle similaire, filtrant les sédiments, polluants et excès de nutriments avant que l’eau ne retourne dans l’océan.",
+        "info": "Les marais salants peuvent filtrer jusqu’à 50 % des nitrates et phosphates provenant des activités humaines.",
+        "bon_fonctionnement": "Les marais salants filtrent efficacement les polluants, améliorant la qualité de l'eau et protégeant les écosystèmes côtiers.",
+        "mauvais_fonctionnement": "La pollution par les nutriments et les produits chimiques perturbe la capacité des marais salants à filtrer et réguler l'eau, nuisant à la biodiversité."
     },
 
     {
-        "title" :"reins",
-        "content" : "Vous êtes dans les reins. \n Les reins humains filtrent le sang pour éliminer les déchets et équilibrer l'eau et les sels dans le corps. \n Les marais salants et estuaires jouent un rôle similaire, filtrant les sédiments, polluants et excès de nutriments avant que l’eau ne retourne dans l’océan. ",
-        "info": "Les marais salants peuvent filtrer jusqu’à 50 % des nitrates et phosphates provenant des activités humaines."
+        "title" : "Foie",
+        "content" : "Vous êtes dans le foie. \n Le foie humain détoxifie le sang, décompose les toxines et régule les métabolismes des graisses, des protéines et des glucides. \n Les océans ont leur propre foie naturel grâce à des processus de filtration et de détoxification réalisés par les zones littorales comme les mangroves, les herbiers marins et les récifs coralliens.",
+        "info": "Les récifs coralliens et les mangroves jouent un rôle crucial dans la filtration des polluants et le recyclage des nutriments.",
+        "bon_fonctionnement": "Les écosystèmes littoraux détoxifient efficacement l'eau et restaurent les habitats marins, soutenant la biodiversité.",
+        "mauvais_fonctionnement": "La pollution par les plastiques et les produits chimiques perturbe les fonctions détoxifiantes des écosystèmes littoraux, menaçant leur survie."
     },
 
     {
-        "title" :"squelette",
-        "content" : "Vous êtes dans le squelette. \n Le squelette humain soutient le corps et permet le mouvement. \n Dans les océans, les récifs coralliens et les structures calcaires des organismes marins jouent le rôle de \"squelette\", offrant un habitat et un support à des milliers d'espèces. ",
-        "info": "Les récifs coralliens réduisent jusqu'à 97 % de l'énergie des vagues, protégeant ainsi les zones côtières."
+        "title" : "Squelette",
+        "content" : "Vous êtes dans le squelette. \n Le squelette humain soutient le corps et permet le mouvement. \n Dans les océans, les récifs coralliens et les structures calcaires des organismes marins jouent le rôle de \"squelette\", offrant un habitat et un support à des milliers d'espèces.",
+        "info": "Les récifs coralliens réduisent jusqu'à 97 % de l'énergie des vagues, protégeant ainsi les zones côtières.",
+        "bon_fonctionnement": "Les récifs coralliens et les structures calcaires marines soutiennent une grande diversité d'espèces et protègent les côtes.",
+        "mauvais_fonctionnement": "La destruction des récifs coralliens par le réchauffement climatique et la pollution menace l'intégrité de ces écosystèmes vitaux."
+    },
+
+    {
+        "title" : "Yeux",
+        "content" : "Vous êtes dans les yeux. \n Les yeux humains captent la lumière et permettent de percevoir l'environnement. \n Les océans, de leur côté, jouent un rôle similaire en captant la lumière du soleil et en la redistribuant dans les profondeurs. Cela influence les cycles de vie des espèces marines et le climat.",
+        "info": "La pénétration de la lumière dans l'océan permet la photosynthèse dans les zones éclairées, soutenant la vie marine.",
+        "bon_fonctionnement": "Les océans captent efficacement la lumière et soutiennent les cycles biologiques et climatiques grâce à la photosynthèse.",
+        "mauvais_fonctionnement": "L'augmentation de la pollution des océans et de l'acidification affecte la capacité des écosystèmes marins à utiliser la lumière, menaçant les chaînes alimentaires marines."
     }
 ]
